@@ -1,0 +1,95 @@
+/* Reset and Basic Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #1a1a1a;
+  color: #f0f0f0;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  background: #262626;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #00ffcc;
+  font-size: 2.5em;
+}
+
+header p {
+  color: #cccccc;
+  font-style: italic;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  border-bottom: 2px solid #00ffcc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  color: #00ffcc;
+}
+
+ul li {
+  margin-left: 20px;
+  list-style: square;
+  color: #e0e0e0;
+}
+
+.slider {
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+  overflow: hidden;
+  border: 3px solid #00ffcc;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  animation: slide 12s infinite;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #262626;
+  color: #999999;
+  font-size: 0.9em;
+  border-top: 1px solid #444;
+}
+.dad-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00f2ff;
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.6);
+  margin-top: 10px;
+}
